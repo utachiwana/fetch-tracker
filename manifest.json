@@ -1,0 +1,20 @@
+{
+  "name": "Fetch Tracker",
+  "description": "Отслеживает уникальные домены fetch-запросов на активной вкладке.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "debugger",
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "images/icon.svg"
+  },
+  "icons": {
+    "128": "images/icon.svg"
+  }
+}

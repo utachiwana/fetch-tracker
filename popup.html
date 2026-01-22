@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fetch Tracker</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h1>Fetch Tracker</h1>
+    <div class="tab-selection">
+        <label for="tabSelector">Отслеживать вкладку:</label>
+        <select id="tabSelector">
+            <option value="">Загрузка...</option>
+        </select>
+    </div>
+    <div class="controls">
+        <button id="startButton" title="Старт"><img src="images/start.svg" alt="Старт"></button>
+        <button id="pauseButton" title="Пауза" disabled><img src="images/pause.svg" alt="Пауза"></button>
+        <button id="stopButton" title="Стоп" disabled><img src="images/stop.svg" alt="Стоп"></button>
+        <button id="copyButton" title="Копировать" disabled><img src="images/copy.svg" alt="Копировать"></button>
+
+    </div>
+    <div id="domainsList"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
